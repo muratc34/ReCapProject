@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarDal:IEntityRepositroy<Car>
+    public interface IBrandDal:IEntityRepositroy<Brand>
     {
     }
 }
