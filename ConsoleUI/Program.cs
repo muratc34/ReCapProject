@@ -11,8 +11,38 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //CarTest();
-            CarsInfoList();
+            //CarsInfoList();
 
+            RentalTest();
+            //UserTest();
+
+        }
+
+        private static void UserTest()
+        {
+            UserManager userManager = new UserManager(new EfUserDal());
+            User user1 = new User()
+            {
+                FirstName = "Hande",
+                LastName = "Güler",
+                Email = "handegüler@gmail.com",
+                Password = "12345678910",
+            };
+            var result = userManager.Delete(user1);
+        }
+
+        private static void RentalTest()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            var result = rentalManager.Add(new Rental { CarId = 1, CustomerId = 3, RentDate = (new DateTime(2021, 3, 29, 18, 59, 00)) });
+            if (result.Success)
+            {
+                Console.WriteLine(result.Message);
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void CarsInfoList()
