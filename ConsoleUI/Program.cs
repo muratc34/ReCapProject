@@ -18,8 +18,10 @@ namespace ConsoleUI
         private static void CarsInfoList()
         {
             CarManager carManager = new CarManager(new EfCarDal());
+            var result = carManager.GetCarDetails();
+            Console.WriteLine(result.Message);
 
-            foreach (var car in carManager.GetCarDetails())
+            foreach (var car in result.Data)
             {
                 Console.WriteLine("Brand Name: " + car.BrandName);
                 Console.WriteLine("Description: " + car.CarName);
@@ -32,10 +34,10 @@ namespace ConsoleUI
         private static void CarTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            carManager.Add(new Car() {CarName = "Clio", ModelYear = "2015", BrandId = 5, ColorId = 4, DailyPrice = 100 });
-            carManager.Update(new Car() { Id = 5, CarName = "190E", ModelYear = "1997", BrandId = 2, ColorId = 1, DailyPrice = 500 });
+            var result = carManager.GetAll();
+            Console.WriteLine(result.Message);
 
-            foreach (var car in carManager.GetAll())
+            foreach (var car in result.Data)
             {
                 Console.WriteLine("Id: " + car.Id);
                 Console.WriteLine("Brand Id: " + car.BrandId);
