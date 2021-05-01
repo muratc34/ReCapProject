@@ -17,7 +17,7 @@ namespace Business.Constants
         internal static string CarNotAdded = "Araç eklenemedi.";
         internal static string CarAdded = "Araç eklendi.";
         internal static string CarUpdated = "Araç güncellendi.";
-        internal static string CarDeleted = "Araç güncellenemedi.";
+        internal static string CarDeleted = "Araç silindi.";
         internal static string CarsListed = "Araçlar listelendi";
 
         internal static string ColorAdded = "Renk eklendi.";
