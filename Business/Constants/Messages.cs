@@ -36,7 +36,7 @@ namespace Business.Constants
         internal static string CustomersListed = "Müşteriler listelendi.";
 
         internal static string RentalAdded = "Kiralık araba eklendi.";
-        internal static string RentalNotAdded = "Kiralık araba eklenemedi.";
+        internal static string RentalNullReturnDate = "Kiralık araba eklenemedi çünkü araba kiralanmış ve teslim edilmemiş.";
         internal static string RentalDeleted = "Kiralık araba silindi.";
         internal static string RentalUpdated = "Kiralık araba güncellendi.";
         internal static string RentalListed = "Kiralık arabalar listelendi.";
