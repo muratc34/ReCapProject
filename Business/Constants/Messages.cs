@@ -40,5 +40,9 @@ namespace Business.Constants
         internal static string RentalDeleted = "Kiralık araba silindi.";
         internal static string RentalUpdated = "Kiralık araba güncellendi.";
         internal static string RentalListed = "Kiralık arabalar listelendi.";
+        internal static string ImageLimitExceded;
+        internal static string ImageAdded;
+        internal static string ImageDeleted;
+        internal static string ImageUpdate;
     }
 }
