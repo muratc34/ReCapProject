@@ -1,4 +1,5 @@
-﻿using Entities.DTOs;
+﻿using Core.Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,42 +8,50 @@ namespace Business.Constants
 {
     public class Messages
     {
-        internal static string BrandAdded = "Marka eklendi.";
-        internal static string BrandNotAdded = "Marka eklenemedi.";
-        internal static string BrandUpdated = "Marka güncellenemedi.";
-        internal static string BrandNotUpdated = "Marka güncellendi.";
-        internal static string BrandDeleted = "Marka silindi.";
-        internal static string BrandListed = "Markalar listelendi.";
+        public static string BrandAdded = "Marka eklendi.";
+        public static string BrandNotAdded = "Marka eklenemedi.";
+        public static string BrandUpdated = "Marka güncellenemedi.";
+        public static string BrandNotUpdated = "Marka güncellendi.";
+        public static string BrandDeleted = "Marka silindi.";
+        public static string BrandListed = "Markalar listelendi.";
 
-        internal static string CarNotAdded = "Araç eklenemedi.";
-        internal static string CarAdded = "Araç eklendi.";
-        internal static string CarUpdated = "Araç güncellendi.";
-        internal static string CarDeleted = "Araç silindi.";
-        internal static string CarsListed = "Araçlar listelendi";
+        public static string CarNotAdded = "Araç eklenemedi.";
+        public static string CarAdded = "Araç eklendi.";
+        public static string CarUpdated = "Araç güncellendi.";
+        public static string CarDeleted = "Araç silindi.";
+        public static string CarsListed = "Araçlar listelendi";
 
-        internal static string ColorAdded = "Renk eklendi.";
-        internal static string ColorUpdated = "Renk güncellendi.";
-        internal static string ColorDeleted = "Renk silindi.";
-        internal static string ColorsListed = "Renkler listelendi.";
+        public static string ColorAdded = "Renk eklendi.";
+        public static string ColorUpdated = "Renk güncellendi.";
+        public static string ColorDeleted = "Renk silindi.";
+        public static string ColorsListed = "Renkler listelendi.";
 
-        internal static string UserAdded = "Kullanıcı eklendi.";
-        internal static string UserDeleted = "Kullanıcı silindi.";
-        internal static string UserUpdated = "Kullanıcı güncellendi.";
-        internal static string UsersListed = "Kullanıcılar listelendi.";
+        public static string UserAdded = "Kullanıcı eklendi.";
+        public static string UserDeleted = "Kullanıcı silindi.";
+        public static string UserUpdated = "Kullanıcı güncellendi.";
+        public static string UsersListed = "Kullanıcılar listelendi.";
 
-        internal static string CustomerAdded = "Müşteri eklendi.";
-        internal static string CustomerDeleted = "Müşteri silindi.";
-        internal static string CustomerUpdated = "Müşteri güncellendi.";
-        internal static string CustomersListed = "Müşteriler listelendi.";
+        public static string CustomerAdded = "Müşteri eklendi.";
+        public static string CustomerDeleted = "Müşteri silindi.";
+        public static string CustomerUpdated = "Müşteri güncellendi.";
+        public static string CustomersListed = "Müşteriler listelendi.";
 
-        internal static string RentalAdded = "Kiralık araba eklendi.";
-        internal static string RentalNullReturnDate = "Kiralık araba eklenemedi çünkü araba kiralanmış ve teslim edilmemiş.";
-        internal static string RentalDeleted = "Kiralık araba silindi.";
-        internal static string RentalUpdated = "Kiralık araba güncellendi.";
-        internal static string RentalListed = "Kiralık arabalar listelendi.";
-        internal static string ImageLimitExceded;
-        internal static string ImageAdded;
-        internal static string ImageDeleted;
-        internal static string ImageUpdate;
+        public static string RentalAdded = "Kiralık araba eklendi.";
+        public static string RentalNullReturnDate = "Kiralık araba eklenemedi çünkü araba kiralanmış ve teslim edilmemiş.";
+        public static string RentalDeleted = "Kiralık araba silindi.";
+        public static string RentalUpdated = "Kiralık araba güncellendi.";
+        public static string RentalListed = "Kiralık arabalar listelendi.";
+
+        public static string ImageLimitExceded = "Bu araç için eklenebilecek resim limitine ulaşıldı.";
+        public static string ImageAdded = "Resim eklendi.";
+        public static string ImageDeleted = "Resim silindi.";
+        public static string ImageUpdate = "Resim güncellendi.";
+
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+        public static string PasswordError = "Şifre hatalı";
+        public static string SuccessfulLogin = "Giriş başarılı";
+        public static string UserAlreadyExists = "Bu kullanıcı zaten mevcut";
+        public static string UserRegistered = "Kullanıcı başarıyla kayıt edildi";
+        public static string AccessTokenCreated= "Access Token başarıyla oluşturuldu";
     }
 }
