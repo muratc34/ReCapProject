@@ -18,6 +18,10 @@ using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 using Core.Utilities.Security.Jwt;
 using Core.Utilities.Security.Encryption;
+using Core.Utilities.IoC;
+using Microsoft.AspNetCore.Http;
+using Core.Extensions;
+using Core.DepencyResolvers;
 
 namespace WebAPI
 {
@@ -51,6 +55,10 @@ namespace WebAPI
                         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                     };
                 });
+
+            services.AddDependencyResolvers(new ICoreModule[] {
+                new CoreModule()
+            });
 
             //services.AddSingleton<ICarService,CarManager>();
             //services.AddSingleton<ICarDal,EfCarDal>();

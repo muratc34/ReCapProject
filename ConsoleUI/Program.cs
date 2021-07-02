@@ -13,8 +13,7 @@ namespace ConsoleUI
         {
             //CarTest();
             //CarsInfoList();
-
-            RentalTest();
+            //RentalTest();
             //UserTest();
 
         }
@@ -27,7 +26,6 @@ namespace ConsoleUI
                 FirstName = "Hande",
                 LastName = "Güler",
                 Email = "handegüler@gmail.com",
-                Password = "12345678910",
             };
             var result = userManager.Delete(user1);
         }
